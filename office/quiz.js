@@ -82,6 +82,7 @@ $('#next').on('click', function(e) {
                     <span id="q">${questions[currentQuestion].question_name}</span> <span id="wrong">${name}</span> <span id="right">${questions[currentQuestion].answer_text}</span>
                 </li>`
             );
+						correctionCount += 1;	
         }
         // If we're about to display final question, hide next button & reveal submit
         if (currentQuestion + 1 == numQuestions - 1) {
