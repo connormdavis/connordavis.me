@@ -3,8 +3,14 @@ let currentQuestion = 0;
 let numQuestions = 0;
 let correctAnswers = 0;
 
-let corrections = [];
+let correctionCount = 0;
 let questions;
+
+// Completion Messages
+let badMessages = ["Yikes", "Uhhh...", "Never seen the show?"];
+let decentMessages = ["Not bad", "Decent", "Solid"];
+let goodMessages = ["Impressive!", "Good work!", "Wow!"];
+let perfectMessages = ["Perfect!", "You're an expert!", "You're a pro!"];
 
 // Reveal first question only originally
 $( document ).ready(function() {
@@ -109,21 +115,84 @@ $('#submit').on('click', function(e) {
                     <span id="q">${questions[currentQuestion].question_name}</span> <span id="wrong">${name}</span> <span id="right">${questions[currentQuestion].answer_text}</span>
                 </li>`
             );
-            
+            correctionCount += 1;
         }
 
         // Generate 'corrections'
-        if (corrections.length == 0) {
+        if (correctionCount == 0) {
             $('#errors').hide();
         }
-
+        console.log(`Correction Count: ${correctionCount}`);
 
         // Hide final question & reveal scoreboard
         $(`#${currentQuestion}`).hide();
         $('#submit').hide();
         $('.scoreboard').css('display', 'flex');
         $('#score').text(`${correctAnswers}/${numQuestions}`);
+        // Determine appropriate message
+        let r = getRandomInt(3);
+        let message = "";
+        let imagePath = "";
+        
+        switch (correctAnswers) {
+            case 10:
+                message = perfectMessages[r];
+                imagePath = "images/perfect.jpg";
+                break;
+            case 9:
+                message = goodMessages[r];
+                imagePath = "images/good.jpg";
+                break;
+            case 8:
+                message = goodMessages[r];
+                imagePath = "images/good.jpg";
+                break;
+            case 7:
+                message = decentMessages[r];
+                imagePath = "images/decent.jpg";
+                break;
+            case 6:
+                message = decentMessages[r];
+                imagePath = "images/decent.jpg";
+                break;
+            case 5:
+                message = decentMessages[r];
+                imagePath = "images/decent.jpg";
+                break;
+            case 4:
+                message = badMessages[r];
+                imagePath = "images/bad.jpg";
+                break;
+            case 3:
+                message = badMessages[r];
+                imagePath = "images/bad.jpg";
+                break;
+            case 2:
+                message = badMessages[r];
+                imagePath = "images/bad.jpg";
+                break;
+            case 1:
+                message = badMessages[r];
+                imagePath = "images/bad.jpg";
+                break;
+            case 0:
+                message = badMessages[r];
+                imagePath = "images/bad.jpg";
+                break;
+                
+        }
+        // Set photo
+        $('#final-image').append(
+            `<img id="result-image" src="${imagePath}" alt=""></img>`
+        );
+        // set message
+        $('#message').text(message);
     }
 });
 
+
+// Helper functions
+function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+}
 

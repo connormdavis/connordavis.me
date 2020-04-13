@@ -7,7 +7,14 @@ body {
     font-family: 'Karla', sans-serif;
     background-image: url(paper2.jpg);
     background-repeat: repeat;
+    
 }
+
+body, html {
+    max-height: 100% !important;
+}
+
+
 
 html {
     font-size: 10px;
@@ -86,7 +93,7 @@ header {
 
 .answer img {
     max-height: 90%;
-    max-width: 90%;
+    max-width: 180px;
 
     border-radius: 10px;
 }
@@ -183,7 +190,7 @@ input[type="radio"]:checked ~ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 75%;
+    width: 90%;
     font-size: 3em;
     border-radius: 20px;
     background-color: lightgray;
@@ -205,6 +212,13 @@ input[type="radio"]:checked ~ h3 {
     color: green;
 }
 
+#errors {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .links {
     outline: 2px solid black;
     display: flex;
@@ -219,6 +233,27 @@ input[type="radio"]:checked ~ h3 {
     max-height: 70px;
 }
 
+.footer {
+    
+    position: absolute;
+    
+    bottom: 0;
+    height: 120px;
+}
+
+#result-image {
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 15px;
+}
+
+#final-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}
 
 @media only screen and (max-width: 600px) {
     li.answer {

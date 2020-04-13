@@ -146,7 +146,7 @@
             "question_img_url": "",
             "answers": [
                 {
-                    "text": "Kevin",
+                    "text": "Pam",
                     "img_url": "images/pam.jpg",
                     "value": "incorrect"
                 },
@@ -168,6 +168,118 @@
 
             ],
             "answer_text": "Robert"
+        },
+        {
+            "question_name": "Q7 - Who has the nickname \"monkey\"?",
+            "question_img_url": "",
+            "answers": [
+                {
+                    "text": "Meredith",
+                    "img_url": "images/meredith.jpg",
+                    "value": "incorrect"
+                },
+                {
+                    "text": "Jim",
+                    "img_url": "images/jim.jpg",
+                    "value": "incorrect"
+                },
+                {
+                    "text": "Oscar",
+                    "img_url": "images/oscar.jpg",
+                    "value": "incorrect"
+                },
+                {
+                    "text": "Angela",
+                    "img_url": "images/angela.jpg",
+                    "value": "correct"
+                }
+
+            ],
+            "answer_text": "Angela"
+        },
+        {
+            "question_name": "Q8 - Who owns a beet farm?",
+            "question_img_url": "",
+            "answers": [
+                {
+                    "text": "Kelly",
+                    "img_url": "images/kelly.jpg",
+                    "value": "incorrect"
+                },
+                {
+                    "text": "Dwight",
+                    "img_url": "images/dwight.jpg",
+                    "value": "correct"
+                },
+                {
+                    "text": "Robert",
+                    "img_url": "images/robert.jpg",
+                    "value": "incorrect"
+                },
+                {
+                    "text": "Stanley",
+                    "img_url": "images/stanley.jpg",
+                    "value": "incorrect"
+                }
+
+            ],
+            "answer_text": "Dwight"
+        },
+        {
+            "question_name": "Q9 - Who is the oldest employee at Dunder Mifflin?",
+            "question_img_url": "",
+            "answers": [
+                {
+                    "text": "Toby",
+                    "img_url": "images/toby.jpg",
+                    "value": "incorrect"
+                },
+                {
+                    "text": "Phyllis",
+                    "img_url": "images/phyllis.jpg",
+                    "value": "incorrect"
+                },
+                {
+                    "text": "Creed",
+                    "img_url": "images/creed.jpg",
+                    "value": "correct"
+                },
+                {
+                    "text": "Erin",
+                    "img_url": "images/erin.jpg",
+                    "value": "incorrect"
+                }
+
+            ],
+            "answer_text": "Creed"
+        },
+        {
+            "question_name": "Q10 - Who is Michael's most hated coworker?",
+            "question_img_url": "",
+            "answers": [
+                {
+                    "text": "Kevin",
+                    "img_url": "images/kevin.jpg",
+                    "value": "incorrect"
+                },
+                {
+                    "text": "Erin",
+                    "img_url": "images/erin.jpg",
+                    "value": "incorrect"
+                },
+                {
+                    "text": "Toby",
+                    "img_url": "images/toby.jpg",
+                    "value": "correct"
+                },
+                {
+                    "text": "Robert",
+                    "img_url": "images/robert.jpg",
+                    "value": "incorrect"
+                }
+
+            ],
+            "answer_text": "Toby"
         }
     ]
 }
