@@ -1,0 +1,237 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-image: url(paper2.jpg);
+    background-repeat: repeat;
+}
+
+html {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+li {
+    list-style: none
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: slategrey;
+    height: 100px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    outline: 2px black solid;
+    color: white;
+}
+
+.quiz {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    background-color: lightgray;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.question-section {
+    background-color: darkgray;
+    border-radius: 10px;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.question-section h2 {
+    padding: 5px;
+}
+
+/* .answer-section {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    width: 100%;
+} */
+
+.answer-list {
+    /* width: 90%; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.answer img {
+    max-height: 90%;
+    max-width: 90%;
+
+    border-radius: 10px;
+}
+
+.answer label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.answer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 40%;
+    min-width: 130px;
+    margin: 10px;
+    /* background-color: white; */
+    border-radius: 10px;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+input[type="radio"]:checked ~ img { 
+    border: 10px solid blue;
+    box-shadow: 5px 5px 5px #888888;
+} 
+
+
+input[type="radio"]:hover ~ img { 
+    
+    box-shadow: 5px 5px 5px #888888;
+} 
+input[type="radio"]:checked ~ h3 { 
+    color: blue
+} 
+
+.controls {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.controls button {
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 2.5em;
+    outline: none;
+}
+
+
+#next:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #888888;
+    /* display: none; */
+}
+
+#submit {
+    color: green;
+    border: 2px solid green;
+    display: none;
+}
+
+#submit:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+#next {
+    display: none;
+    margin-bottom: 30px;
+}
+
+.quiz {
+    display: none;
+}
+
+
+
+.scoreboard {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    font-size: 3em;
+    border-radius: 20px;
+    background-color: lightgray;
+    display: none;
+}
+
+.corrections #q {
+    font-size: 0.6em;
+}
+
+.corrections #wrong {
+    font-size: 0.6em;
+    color: red;
+    text-decoration: line-through;
+}
+
+.corrections #right {
+    font-size: 0.6em;
+    color: green;
+}
+
+.links {
+    outline: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.links img {
+    max-height: 70px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    li.answer {
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .answer-list {
+        /* width: 90%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+}
