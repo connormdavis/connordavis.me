@@ -13,6 +13,10 @@ p {
     font-family: 'Raleway', sans-serif !important;
 }
 
+/* REUSABLE CLASSES */
+
+
+
 /* NAV BAR */
 .navbar-custom {
   background-color: rgba(22, 26, 30);
@@ -36,4 +40,43 @@ nav .navbar-nav li a:hover {
 .navbar-toggler-icon:focus {
     outline: none;
     box-shadow: none;
+}
+
+
+/* GREETING */
+
+.display-4 {
+  color: white !important;
+}
+
+#pronounced-name {
+  color: #03DAC6 !important;
+  font-weight: bold;
+}
+
+.greeting {
+  height: 100vh !important;
+}
+
+#headshot {
+  max-height: 30vh;
+  border: 5px white solid;
+  border-radius: 100%;
+}
+
+.divider {
+  border: 6px solid white;
+  border-radius: 4px;
+}
+
+
+/* MEDIA QUERIES */
+
+/* Small devices */
+@media (max-width: 576px) {
+
+  /* GREETING */
+  h1.display-4 {
+    font-size: 2rem !important;
+  }
 }
