@@ -1,7 +1,21 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+html {
+  /* scroll-behavior: smooth; */
+}
+
+h1, p {
+  margin: 0 0 1em;
+}
+
 body {
   font-family: 'Raleway', sans-serif !important;
   background-color: #252934 !important;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -15,6 +29,17 @@ p {
 
 /* REUSABLE CLASSES */
 
+.semi-bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.white-divider {
+  border-color: white;
+}
 
 
 /* NAV BAR */
@@ -49,24 +74,136 @@ nav .navbar-nav li a:hover {
   color: white !important;
 }
 
+.display-3 {
+  color: white !important;
+}
+
 #pronounced-name {
   color: #03DAC6 !important;
   font-weight: bold;
 }
 
 .greeting {
-  height: 100vh !important;
+  height: calc(100% - 78px);
+  padding-top: 76px;
 }
 
 #headshot {
   max-height: 30vh;
   border: 5px white solid;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 .divider {
-  border: 6px solid white;
-  border-radius: 4px;
+  border: 3px solid white;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+h1.display-3 {
+  font-size: 2rem !important;
+}
+
+
+/* MY WORK */
+.my-work {
+  color: #252934 !important;
+  background-color: white;
+}
+
+.about-pic {
+  max-height: 35vh;
+  border: 5px #252934 solid;
+  border-radius: 50%;
+  box-shadow: 6px 6px 5px grey;
+}
+
+
+.projects h2 {
+  color: white;
+}
+
+.project-card {
+  width: 100% !important;
+}
+
+.projects .card-title {
+  font-weight: bold;
+}
+
+#kickstat {
+  color: #5DA9BA;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#fetch352 {
+  color: #212E3E;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#davisfarrell {
+  color: #A63023;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* CONTACT ME */
+
+.contact-me h2, label {
+  color: white;
+}
+
+#form_message {
+  min-height: 120px !important;
+}
+
+#contact-submit {
+  background-color: #03DAC6;
+  color: #252934;
+}
+
+a.project-icon-link:hover {
+  text-decoration: none;
+}
+
+.project-icon {
+  color: #252934;
+}
+
+.project-icon:hover {
+  color: #222327c4;
+}
+
+.subtitle {
+  color: grey;
+}
+
+/* FOOTER */
+.page-footer {
+  background-color: rgba(22, 26, 30);
+}
+
+.footer-copyright {
+  color: white;
+}
+
+.return-arrow {
+  color: white;
+}
+
+.return-arrow:hover {
+  color: lightslategray;
+}
+
+a.social-link:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.social-link {
+  color: white;
 }
 
 
@@ -78,5 +215,27 @@ nav .navbar-nav li a:hover {
   /* GREETING */
   h1.display-4 {
     font-size: 2rem !important;
+  }
+
+  h1.display-3 {
+    font-size: 1.5rem !important;
+  }
+
+  .greeting-text {
+    text-align: center;
+  }
+
+  /* MY WORK */
+  .about-pic {
+    max-height: 30vh;
+  }
+
+}
+
+/* Large Devices */
+@media (max-width: 992px) {
+  /* MY WORK */
+  .about-pic {
+    max-height: 30vh;
   }
 }

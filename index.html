@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html id="top" lang="en">
 
 <head>
   <!-- Required meta tags -->
@@ -8,6 +8,8 @@
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 
   <!-- Custom CSS -->
   <link href="css/main.css" rel="stylesheet">
@@ -21,8 +23,8 @@
 
 <body>
   <!-- NAV BAR -->
-  <nav class="navbar navbar-expand-lg py-1 navbar-custom bg-custom shadow-sm">
-    <div class="container">
+  <nav class="navbar fixed-top navbar-expand-lg py-1 navbar-custom bg-custom shadow-sm">
+    <div id="top" class="container">
       <a href="#" class="navbar-brand">
         <!-- Logo Image -->
         <img src="/assets/logo_light.png" width="60" alt="" class="d-inline-block align-middle mr-2">
@@ -36,14 +38,15 @@
 
       <div id="navbarItems" class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="#" class="nav-link">Hello<span class="sr-only">(current)</span></a></li>
-          <li class="nav-item"><a href="#" class="nav-link">My Work</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Let's talk!</a></li>
+          <li class="nav-item active"><a href="#top" class="nav-link">Hello<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item"><a href="#my-work" class="nav-link">My Work</a></li>
+          <li class="nav-item"><a href="#contact-me" class="nav-link">Connect</a></li>
         </ul>
       </div>
     </div>
   </nav>
+
 
   <!-- GREETING -->
   <div class="greeting container-md my-5">
@@ -51,7 +54,7 @@
       <div class="col-sm-1 col-lg-2">
         <!-- empty -->
       </div>
-      <div class="col-sm-5 col-md-5 col-lg-4 my-auto text-center">
+      <div class="greeting-text col-sm-5 col-md-5 col-lg-4 my-auto">
         <h1 class="display-4">Nice to meet you, I'm <span id="pronounced-name">Connor Davis</span>!</h1>
       </div>
       <div class="col-sm-5 col-md-5 col-lg-4 my-auto text-center">
@@ -66,20 +69,265 @@
     <hr class="my-4 divider" />
 
     <div class="row">
+      <div class="col-sm-2">
+        <!-- empty -->
+      </div>
+      <div class="col text-center">
+        <h1 class="display-3">I'm a <span class="semi-bold">software engineer</span> studying computer science at <span
+            class="semi-bold">Dartmouth College.</span></h1>
+      </div>
+      <div class="col-sm-2">
+        <!-- empty -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center my-3">
+        <a href="#my-work" class="fb-ic social-link">
+          <i class="down-arrow fas fa-arrow-down fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="my-work" style="
+    position: absolute;
+    bottom: 40px;
+  "></div>
+
+  <!-- My Work -->
+  <div class="my-work container-fluid">
+    <div class="row">
+      <div class="col text-center my-4">
+        <h2>About me</h2>
+        <hr />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1">
+        <!-- empty -->
+      </div>
+      <div class="col-xs-12 col-sm-5">
+        <p>
+          Ever since I was a little kid I've always been interested in technology. I've always loved building things.
+          Software engineering empowers me to impact people's lives and solve real world problems - all from the comfort
+          of a desk. I have experience developing full-stack web applications, static sites, mobile applications,
+          native desktop applications, and more.
+          <br><br>
+          As a 2-year starting kicker for Dartmouth Football, I devote roughly 30 hours per week to playing and training
+          with the team. When I'm not playing football or doing classwork, I love to experience the outdoors.
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-5">
+        <h5 class="semi-bold">
+          Highlights:
+        </h5>
+        <ul>
+          <li class="my-2">Developed <a href="https://kickstat.app" id="kickstat">KickStat</a>, an iOS app with hundreds
+            of downloads and a 5⭐
+            average rating, to help
+            kickers and punters like
+            myself track & analyze practice data over time.</li>
+          <li class="my-2">Built <a href="https://fetch352.com" id="fetch352">Fetch352</a>, a complex online delivery
+            service to provide
+            contactless errands during
+            quarantine.</li>
+          <li class="my-2">Maintain & improve web applications within a complex code base as a junior developer for
+            <a href="https://www.davisfarrell.com" id="davisfarrell">Davis Farrell I.T.</a> </li>
+        </ul>
+      </div>
+      <div class="col-sm-1">
+        <!-- empty -->
+      </div>
+    </div>
+    <div class="row my-4 justify-content-center no-gutters">
+      <!-- row of pics in cool frames with individual small captions -->
+      <div class="col-xs-12 text-center mx-3">
+        <figure class="figure">
+          <img src="/assets/football.JPG" class="about-pic figure-img img-fluid rounded"
+            alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption">Kicking off Dartmouth v. Yale</figcaption>
+        </figure>
+      </div>
+      <div class="col-xs-12 text-center mx-3">
+        <figure class="figure">
+          <img src="/assets/breck.JPG" class="about-pic figure-img img-fluid rounded"
+            alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption">Climbing Torreys Peak in Colorado</figcaption>
+        </figure>
+      </div>
+      <div class="col-xs-12 text-center mx-3">
+        <figure class="figure">
+          <img src="/assets/fetch-news.png" class="about-pic figure-img img-fluid rounded"
+            alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption">The Dartmouth article about Fetch352</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <div id="projects" class="projects container-fluid my-2">
+    <div class="row">
+      <div class="col text-center my-2">
+        <h2>Projects</h2>
+      </div>
+    </div>
+    <div id="projects-list" class="row">
+
+      <!-- <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="/assets/logo_dark.png" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional
+                  content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
 
     </div>
   </div>
 
+
+  <!-- CONTACT ME -->
+
+  <div id="contact-me" class="contact-me container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6 text-center my-2">
+        <h2>Contact Me</h2>
+        <p class="subtitle">Let's connect. I'll get back to you within 48 hours.</p>
+        <hr class="white-divider">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <!-- contact form -->
+        <form id="contact-form" method="POST" action="https://formspree.io/mgenjwnk" role="form">
+
+          <div class="messages"></div>
+
+          <div class="controls">
+
+            <div class="row justify-content-center">
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="form-group">
+                  <label for="form_name">Name *</label>
+                  <input id="form_name" type="text" name="name" class="form-control"
+                    placeholder="Please enter your name" required="required" data-error="Name is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="form-group">
+                  <label for="form_email">Email *</label>
+                  <input id="form_email" type="email" name="_replyto" class="form-control"
+                    placeholder="Please enter your email" required="required" data-error="Valid email is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-8 col-lg-6">
+                <div class="form-group">
+                  <label for="form_message">Message *</label>
+                  <textarea id="form_message" name="message" class="form-control" placeholder="Message for me" rows="4"
+                    required="required" data-error="Please, leave us a message."></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-12 text-center">
+                <input id="contact-submit" type="submit" class="btn btn-success btn-send" value="Send message">
+              </div>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="page-footer font-small mt-4">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+      <div class="row text-center py-2">
+        <div class="col">
+          <a href="#top" class="btn" role="button">
+            <i class="return-arrow fas fa-angle-double-up fa-3x"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Grid row-->
+      <div class="row text-center">
+
+        <!-- Grid column -->
+        <div class="col-md-12 py-3">
+          <div class="mb-3 flex-center">
+            <!--E-Mail -->
+            <a href="mailto:connor.m.davis.22@dartmouth.edu" class="li-ic social-link">
+              <i class="social-icon fas fa-envelope fa-lg white-text mr-md-5 mx-3 fa-2x"> </i>
+            </a>
+            <!--Linkedin -->
+            <a href="https://www.linkedin.com/in/connor-m-davis/" class="li-ic social-link">
+              <i class="social-icon fab fa-linkedin-in fa-lg white-text mr-md-5 mx-3 fa-2x"> </i>
+            </a>
+            <!-- GitHub -->
+            <a href="https://github.com/connormdavis" class="fb-ic social-link">
+              <i class="social-icon fab fa-github fa-lg white-text mr-md-5 mx-3 fa-2x"> </i>
+            </a>
+            <!-- Twitter -->
+            <a href="https://twitter.com/condavis6" class="tw-ic social-link">
+              <i class="social-icon fab fa-twitter fa-lg white-text mr-md-5 mx-3 fa-2x"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+      © 2020 Copyright. All rights reserved.
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+
   <!-- jQuery, Popper, Bootstrap JS Scripts -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+
+  <!-- My Scripts -->
+  <script src="js/smoothScroll.js"></script>
+  <script src="js/projects.js"></script>
+
 </body>
 
 </html>
