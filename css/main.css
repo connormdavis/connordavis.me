@@ -149,6 +149,12 @@ h1.display-3 {
   text-decoration: none;
 }
 
+#card-row {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
 /* CONTACT ME */
 
 .contact-me h2, label {

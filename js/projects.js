@@ -64,15 +64,16 @@ projects.forEach(project => {
     </a>
   ` : "";
 
-
   projectHTML += `
     <div class="col-sm-6 col-xl-6 d-flex justify-content-center">
       <div class="project-card card mb-3">
-        <div class="row no-gutters">
+        <div id="card-row" class="row no-gutters">
           <div class="col-md-12 col-xl-6">
+            
             <a href="${project.link}">
               <img src="${project.image_path}" class="card-img project-img" alt="...">
             </a>
+            
           </div>
           <div class="col-md-12 col-xl-6">
             <div class="card-body">
