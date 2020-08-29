@@ -67,6 +67,14 @@ nav .navbar-nav li a:hover {
     box-shadow: none;
 }
 
+.resume {
+  font-weight: bold !important;
+}
+
+.notification-profile {
+  height: 35px !important;
+}
+
 
 /* GREETING */
 
@@ -184,6 +192,14 @@ a.project-icon-link:hover {
 
 .subtitle {
   color: grey;
+}
+
+.toast a {
+  text-decoration: none;
+}
+
+.toast i {
+  color: #252934;
 }
 
 /* FOOTER */
