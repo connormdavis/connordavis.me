@@ -142,19 +142,19 @@ h1.display-3 {
 #kickstat {
   color: #5DA9BA;
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 #fetch352 {
   color: #212E3E;
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 #davisfarrell {
   color: #A63023;
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 #card-row {
@@ -260,4 +260,23 @@ a.social-link:hover {
   .about-pic {
     max-height: 30vh;
   }
+  
+}
+
+/* Mobile & Landscape */
+@media (max-width: 992px) and (orientation:landscape) {
+  /* GREETING */
+  #headshot {
+    max-height: 60vh !important;
+  }
+
+  .display-4 {
+    font-size: 2.5rem !important;
+  }
+
+  .greeting {
+    height: auto !important;
+  }
+
+
 }
